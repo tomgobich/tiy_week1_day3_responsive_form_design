@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background-color: #5ca4d6;
+}
+
+.container {
+    width: 990px;
+    min-width: 275px;
+    margin: 40px auto 0;
+}
+
+.column {
+    display: inline-block;
+    width: 32%;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+label,
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-size: .8em;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    text-transform: uppercase;
+    color: #fefefe;
+}
+
+input,
+select,
+textarea {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 8px 10px;
+    color: #fefefe;
+    border: 2px solid #fefefe;
+    background-color: transparent;
+}
+
+select {
+    border: 1px solid gray;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2a6a98;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 600;
+    font-style: italic;
+    color: #2a6a98;
+}
+
+/* Firefox 18- */
+:-moz-placeholder {
+    font-weight: 600;
+    font-style: italic;
+    color: #2a6a98;
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    font-weight: 600;
+    font-style: italic;
+    color: #2a6a98;
+}
+
+:-ms-input-placeholder {
+    font-weight: 600;
+    font-style: italic;
+    color: #2a6a98;
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+}
